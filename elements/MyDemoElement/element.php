@@ -91,7 +91,39 @@ class Mydemoelement extends \Breakdance\Elements\Element
 
     static function contentControls()
     {
-        return [];
+        return [c(
+        "input_controls",
+        "Input Controls",
+        [c(
+        "colour",
+        "Colour",
+        [],
+        ['type' => 'color', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      ), c(
+        "size",
+        "Size",
+        [],
+        ['type' => 'unit', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      )],
+        ['type' => 'section', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      ), c(
+        "other_controls",
+        "Other Controls",
+        [],
+        ['type' => 'section', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      )];
     }
 
     static function settingsControls()
